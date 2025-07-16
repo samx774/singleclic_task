@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";
+import { FaRegTrashAlt } from "react-icons/fa";
 import { FiMinus, FiPlus } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import Image from "../components/ui/Image";
@@ -31,8 +32,16 @@ export default function Cart() {
                             cartItems.map((item) => (
                                 <div
                                     key={item.id}
-                                    className="flex items-center gap-4 mb-4 p-4 border rounded shadow"
+                                    className="flex items-center gap-4 mb-4 p-4 border rounded relative shadow"
                                 >
+                                    <div className="absolute top-2 right-2">
+                                        <button
+                                            onClick={() => removeFromCart(item.id)}
+                                            className="cursor-pointer text-red-500 hover:text-red-600 px-2 py-1 rounded"
+                                        >
+                                            <FaRegTrashAlt size={20} />
+                                        </button>
+                                    </div>
                                     <Image
                                         src={item.image}
                                         alt={item.title}
