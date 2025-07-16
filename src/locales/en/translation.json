@@ -1,0 +1,62 @@
+{
+  "links": {
+    "home": "HOME",
+    "shop": "SHOP",
+    "sofa": "SOFA",
+    "cabinet": "CABINET",
+    "blogs": "BLOGS",
+    "contact": "CONTACT",
+    "buyNow": "Buy Now",
+    "login":"Login",
+    "register":"Register",
+    "checkout":"CHECKOUT",
+    "cart":"CART",
+    "wishlist":"WISHLIST",
+    "vendors":"VENDORS"
+  },
+  "custom-text": {
+    "addCart": "Add to Cart",
+    "ourProduct": "Our Products",
+    "newArrival": "New Arrivals",
+    "shop":"SHOP",
+    "product_details":"PRODUCT DETAILS",
+    "wishlist":"Wishlist",
+    "related":"related products",
+    "email":"Email address",
+    "pass":"Password",
+    "first":"First Name",
+    "last":"Last Name",
+    "phone":"Phone",
+    "passConfirm":"Confirm password",
+    "address":"Street address",
+    "city":"City",
+    "subject":"Subject",
+    "message":"Message",
+    "send":"SEND",
+    "contactInfo":"CONTACT INFO",
+    "apartment":"Apartment, suite, unit etc. (optional)",
+    "state":"State / Province",
+    "postal":"ZIP / Postal code",
+    "order":"PLACE ORDER",
+    "billingDetails":"Billing Details",
+    "couponT":"Enter your coupon code if you have one",
+    "coupon":"Coupon Code",
+    "apply":"APPLY",
+    "urOrder":"Your order",
+    "product":"Products",
+    "total":"Total",
+    "cartTotal":"Cart Subtotal",
+    "oTotal":"Order Total"
+  },
+  "blogSection": {
+    "text": "LATEST FROM",
+    "title": "OUR BLOG"
+  },
+  "table":{
+    "image":"Image",
+    "productName":"Product Name",
+    "quantity":"Quantity",
+    "total":"Total",
+    "remove":"Remove"
+  }
+}
