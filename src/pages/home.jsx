@@ -42,7 +42,7 @@ export default function Home() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-3 py-1 rounded border ${selectedCategory === category
+              className={`px-3 cursor-pointer py-1 rounded border ${selectedCategory === category
                   ? "bg-blue-600 text-white"
                   : "bg-white text-gray-700"
                 }`}

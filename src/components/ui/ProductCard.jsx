@@ -17,7 +17,7 @@ export default function ProductCard({ product, addToCart }) {
             <p className="text-sm text-gray-600 mb-2 line-clamp-2">{product.description}</p>
             <div className="flex items-center justify-between mt-auto">
                 <span className="font-bold text-green-600">${product.price}</span>
-                <span className="text-blue-500 hover:underline">View</span>
+                <Link to={`/product/${product.id}`} className="text-blue-500 hover:underline">View</Link>
             </div>
             <button
                 onClick={(e) => {

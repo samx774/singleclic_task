@@ -16,14 +16,12 @@ export default function Navbar() {
                     <Link to="/" className="hover:underline">
                         Home
                     </Link>
-                    <div className="relative">
-                        <Link to="/cart">
-                            <FiShoppingCart size={24} />
-                        </Link>
+                    <Link to="/cart" className="relative">
+                        <FiShoppingCart size={24} />
                         <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
                             {cartCount}
                         </span>
-                    </div>
+                    </Link>
                 </div>
             </nav>
         </header>
