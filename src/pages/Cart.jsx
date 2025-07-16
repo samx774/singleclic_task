@@ -64,7 +64,7 @@ export default function Cart() {
                         )}
                     </div>
 
-                    <div className="border rounded shadow p-6 sticky top-4 h-fit">
+                    <div className="border rounded shadow p-6 sticky top-20 h-fit">
                         <h2 className="text-xl font-bold mb-4">Order Summary</h2>
                         <div className="flex justify-between mb-4">
                             <span>Total Items:</span>
