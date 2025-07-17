@@ -13,6 +13,7 @@ export default function ProductCard({ product, addToCart }) {
                     className="w-full h-48 object-contain mb-2"
                 />
             </Link>
+            
             <h2 className="text-lg font-semibold mb-1">{product.title}</h2>
             <p className="text-sm text-gray-600 mb-2 line-clamp-2">{product.description}</p>
             <div className="flex items-center justify-between mt-auto">
@@ -20,8 +21,8 @@ export default function ProductCard({ product, addToCart }) {
                 <Link to={`/product/${product.id}`} className="text-blue-500 hover:underline">View</Link>
             </div>
             <button
+                name="add-to-cart"
                 onClick={(e) => {
-                    e.stopPropagation();
                     addToCart(product);
                 }}
                 className="bg-black text-white px-3 py-1 w-full mt-3 cursor-pointer rounded hover:bg-black/80"

@@ -36,6 +36,7 @@ export default function Cart() {
                                 >
                                     <div className="absolute top-2 right-2">
                                         <button
+                                            name="remove-from-cart"
                                             onClick={() => removeFromCart(item.id)}
                                             className="cursor-pointer text-red-500 hover:text-red-600 px-2 py-1 rounded"
                                         >
@@ -53,6 +54,7 @@ export default function Cart() {
                                     </div>
                                     <div className="flex items-center gap-2 mt-2">
                                         <button
+                                            name="decrease-quantity"
                                             onClick={() => decreaseQty(item.id)}
                                             className="p-1 cursor-pointer bg-gray-200 rounded hover:bg-gray-300"
                                         >
@@ -62,6 +64,7 @@ export default function Cart() {
                                         <span className="px-2">{item.quantity}</span>
 
                                         <button
+                                            name="increase-quantity"
                                             onClick={() => increaseQty(item.id)}
                                             className="p-1 cursor-pointer bg-gray-200 rounded hover:bg-gray-300"
                                         >
@@ -84,6 +87,7 @@ export default function Cart() {
                             <span className="font-semibold">${totalPrice.toFixed(2)}</span>
                         </div>
                         <button
+                            name="proceed-to-checkout"
                             onClick={() => alert("Proceeding to checkout...")}
                             className="w-full cursor-pointer bg-black disabled:opacity-50 disabled:cursor-not-allowed hover:bg-black/80 text-white py-2 rounded"
                             disabled={cartItems.length === 0}
