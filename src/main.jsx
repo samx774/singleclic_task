@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { PhotoProvider } from "react-photo-view";
@@ -12,7 +11,6 @@ import "./i18n";
 import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Analytics />
     <CartProvider>
       <PhotoProvider>
         <App />
