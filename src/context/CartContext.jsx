@@ -93,7 +93,7 @@ export function CartProvider({ children }) {
         dispatch({ type: "DECREASE_QUANTITY", payload: id });
     };
 
-    const cartCount = state.cartItems.reduce((sum, item) => sum + item.quantity, 0);
+    const cartCount = state.cartItems.length;
     const totalPrice = state.cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     useEffect(() => {
